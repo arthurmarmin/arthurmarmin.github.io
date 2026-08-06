@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Publications scientifiques - Arthur Marmin">
+  <meta name="author" content="Arthur Marmin">
+  
+  <title>Publications - Arthur Marmin</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/language.js" defer></script>
+  <script src="js/bibtex.js" defer></script>
+</head>
+
+
+<body>
+   <!-- Barre de langue en haut -->
+  <div class="lang-switch">
+    <button onclick="setLanguage('fr')" aria-label="Français">FR</button>
+    <button onclick="setLanguage('en')" aria-label="English">EN</button>
+  </div>
+
+  <!-- Header sur TOUTES les pages -->
+  <header>
+    <div class="container">
+      <div class="profile">
+        <img src="assets/photo_id.jpg" alt="Arthur Marmin">
+        <div>
+          <h1>Arthur Marmin</h1>
+          <p
+            data-fr="Maître de conférences"
+            data-en="Assistant professor">
+            Maître de conférences
+          </p>
+          <p>Aix-Marseille Université</p>
+          <p>
+            <a href="https://orcid.org/0000-0002-2508-6969"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="ORCID (ouvre dans un nouvel onglet)">
+              ORCID
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation cohérente -->
+  <nav>
+    <ul>
+      <li><a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a></li>
+      <li><a href="cv.html" data-fr="CV" data-en="CV">CV</a></li>
+      <li><a href="publications.html" data-fr="Publications" data-en="Publications">Publications</a></li>
+      <li><a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenu principal -->
+  <main class="container">
+    <h1 data-i18n="publications.title">Publications</h1>
+
+
+    <!-- Articles de journaux -->
+    <section class="publications-section">
+      <h2 class="publi-type" data-i18n="publications.journals"
+          data-fr="Article de journaux"
+          data-en="Journals">Articles de journaux</h2>
+      
+      <article class="publication">
+        <div class="publication-meta">
+          <span class="publication-year">2025</span>
+        </div>
+        <div class="publication-content">
+          <h3>VARPROX: a primal-dual variable projection method for the minimization of penalized separable non-linear least squares.</h3>
+          <p class="publication-authors">A. Marmin, F.J.P. Richard</p>
+          <p class="publication-journal"><em>Inverse Problems</em>, 41, 105006, October 2025</p>
+          <div class="publication-links">
+            <a href="https://doi.org/10.1088/1361-6420/ae0e48" target="_blank" rel="noopener noreferrer" aria-label="DOI: 10.1088/1361-6420/ae0e48">DOI</a>
+            <a href="https://github.com/Varprox/varprox" target="_blank" rel="noopener noreferrer">Code</a>
+            <button class="bibtex-btn" onclick="downloadBibtex('InvProb2025')" aria-label="Download BibTeX">BibTeX</button>
+          </div>
+        </div>
+      </article>
+      
+      <article class="publication">
+        <div class="publication-meta">
+          <span class="publication-year">2025</span>
+        </div>
+        <div class="publication-content">
+          <h3>A robust shifted proper orthogonal decomposition: Proximal methods for decomposing flows with multiple transports.</h3>
+          <p class="publication-authors">P. Krah, A. Marmin, B. Zorawski, J. Reiss, K. Schneider</p>
+          <p class="publication-journal"><em>SIAM Journal on Scientific Computing</em>, vol. 47, no. 2, pp. A633–A656, 2025</p>
+          <div class="publication-links">
+            <a href="https://doi.org/10.1137/24M164392X" target="_blank" rel="noopener noreferrer" aria-label="DOI: 10.1137/24M164392X">DOI</a>
+            <a href="https://arxiv.org/pdf/2403.04313v1" target="_blank" rel="noopener noreferrer">Article</a>
+            <a href="https://github.com/MOR-transport/sPOD" target="_blank" rel="noopener noreferrer">Code</a>
+            <button class="bibtex-btn" onclick="downloadBibtex('SiamSISC2025')" aria-label="Download BibTeX">BibTeX</button>
+          </div>
+        </div>
+      </article>
+      
+      <article class="publication">
+        <div class="publication-meta">
+          <span class="publication-year">2023</span>
+        </div>
+        <div class="publication-content">
+          <h3>Majorization-minimization for Sparse Nonnegative Matrix Factorization with the β-divergence.</h3>
+          <p class="publication-authors">A. Marmin, J.H. de Morais Goulart, C. Févotte</p>
+          <p class="publication-journal"><em>IEEE Transactions on Signal Processing</em>, vol. 71, pp. 1435-1447, April 2023</p>
+          <div class="publication-links">
+            <a href="https://doi.org/10.1109/TSP.2023.3266939" target="_blank" rel="noopener noreferrer" aria-label="DOI: 10.1109/TSP.2023.3266939">DOI</a>
+            <a href="https://arxiv.org/pdf/2207.06316.pdf" target="_blank" rel="noopener noreferrer">Article</a>
+            <a href="./data/snmf_src_matlab.zip" download aria-label="Download MATLAB code">Code</a>
+            <button class="bibtex-btn" onclick="downloadBibtex('TSP2023')" aria-label="Download BibTeX">BibTeX</button>
+          </div>
+        </div>
+      </article>
+      
+      <article class="publication">
+        <div class="publication-meta">
+          <span class="publication-year">2023</span>
+        </div>
+        <div class="publication-content">
+          <h3>Joint Majorization-Minimization for Nonnegative Matrix Factorization with the β-divergence.</h3>
+          <p class="publication-authors">A. Marmin, J.H. de Morais Goulart, C. Févotte</p>
+          <p class="publication-journal"><em>Signal Processing</em>, 209, 109048, August 2023</p>
+          <div class="publication-links">
+            <a href="https://doi.org/10.1016/j.sigpro.2023.109048" target="_blank" rel="noopener noreferrer" aria-label="DOI: 10.1016/j.sigpro.2023.109048">DOI</a>
+            <a href="https://arxiv.org/pdf/2106.15214.pdf" target="_blank" rel="noopener noreferrer">Article</a>
+            <a href="./data/jnmf_src_matlab.zip" download aria-label="Download MATLAB code">Code</a>
+            <button class="bibtex-btn" onclick="downloadBibtex('SigPro2023')" aria-label="Download BibTeX">BibTeX</button>
+          </div>
+        </div>
+      </article>
+      
+      <article class="publication">
+        <div class="publication-meta">
+          <span class="publication-year">2021</span>
+        </div>
+        <div class="publication-content">
+          <h3>Sparse signal reconstruction for nonlinear models via piecewise rational optimization.</h3>
+          <p class="publication-authors">A. Marmin, M. Castella, J.-C. Pesquet, L. Duval</p>
+          <p class="publication-journal"><em>Signal Processing</em>, 179, 107835, February 2021</p>
+          <div class="publication-links">
+            <a href="https://doi.org/10.1016/j.sigpro.2020.107835" target="_blank" rel="noopener noreferrer" aria-label="DOI: 10.1016/j.sigpro.2020.107835">DOI</a>
+            <a href="https://hal.archives-ouvertes.fr/hal-02972442/document" target="_blank" rel="noopener noreferrer">Article</a>
+            <button class="bibtex-btn" onclick="downloadBibtex('SigPro2021')" aria-label="Download BibTeX">BibTeX</button>
+          </div>
+        </div>
+      </article>
+      
+      <article class="publication">
+        <div class="publication-meta">
+          <span class="publication-year">2020</span>
+        </div>
+        <div class="publication-content">
+          <h3>Global optimization for recovery of clipped signals corrupted with Poisson-Gaussian noise.</h3>
+          <p class="publication-authors">A. Marmin, A. Jezierska, M. Castella, J.-C. Pesquet</p>
+          <p class="publication-journal"><em>IEEE Signal Processing Letters</em>, vol. 27, pp. 970-974, May 2020</p>
+          <div class="publication-links">
+            <a href="https://doi.org/10.1109/LSP.2020.2998699" target="_blank" rel="noopener noreferrer" aria-label="DOI: 10.1109/LSP.2020.2998699">DOI</a>
+            <a href="https://hal.archives-ouvertes.fr/hal-02877910/document" target="_blank" rel="noopener noreferrer">Article</a>
+            <button class="bibtex-btn" onclick="downloadBibtex('SPL2020')" aria-label="Download BibTeX">BibTeX</button>
+          </div>
+        </div>
+      </article>
+      
+      <article class="publication">
+        <div class="publication-meta">
+          <span class="publication-year">2019</span>
+        </div>
+        <div class="publication-content">
+          <h3>Rational optimization for nonlinear reconstruction with approximate ℓ0 penalization.</h3>
+          <p class="publication-authors">M. Castella, J.-C. Pesquet, A. Marmin</p>
+          <p class="publication-journal"><em>IEEE Transactions on Signal Processing</em>, vol. 67, no. 10, pp. 2576-2590, May 2019</p>
+          <div class="publication-links">
+            <a href="https://doi.org/10.1109/TSP.2018.2890065" target="_blank" rel="noopener noreferrer" aria-label="DOI: 10.1109/TSP.2018.2890065">DOI</a>
+            <a href="https://hal.science/hal-01852289v1/preview/Brouillon3_OneCol.pdf" target="_blank" rel="noopener noreferrer">Article</a>
+            <button class="bibtex-btn" onclick="downloadBibtex('TSP2019')" aria-label="Download BibTeX">BibTeX</button>
+          </div>
+        </div>
+      </article>
+    </section>
+    
+    <!-- Conférences -->
+    <section class="publications-section">
+      <h2 class="publi-type" data-i18n="publications.conferences"
+          data-fr="Conférences"
+          data-en="Conferences">Conférences</h2>
+      
+      <article class="publication">
+        <div class="publication-meta">
+          <span class="publication-year">2024</span>
+        </div>
+        <div class="publication-content">
+          <h3>Automated transport separation using the neural shifted proper orthogonal decomposition.</h3>
+          <p class="publication-authors">B. Zorawski, S. Burela, P. Krah, A. Marmin, K. Schneider</p>
+          <p class="publication-journal">The 9th European Congress on Computational Methods in Applied Sciences and Engineering (ECCOMAS), June 2024</p>
+          <div class="publication-links">
+            <a href="https://doi.org/10.23967/eccomas.2024.066" target="_blank" rel="noopener noreferrer" aria-label="DOI: 10.23967/eccomas.2024.066">DOI</a>
+            <a href="https://hal.science/hal-04907973v1/file/nspod_eccomas2024.pdf" target="_blank" rel="noopener noreferrer">Article</a>
+            <button class="bibtex-btn" onclick="downloadBibtex('ECCOMAS2024')" aria-label="Download BibTeX">BibTeX</button>
+          </div>
+        </div>
+      </article>
+      
+      <article class="publication">
+        <div class="publication-meta">
+          <span class="publication-year">2021</span>
+        </div>
+        <div class="publication-content">
+          <h3>Weight identification through global optimization in a new hysteretic neural network model.</h3>
+          <p class="publication-authors">E. Leroy, A. Marmin, M. Castella, L. Duval</p>
+          <p class="publication-journal">International Conference on Acoustics, Speech, and Signal Processing (ICASSP), pp. 5315-5319, June 2021</p>
+          <div class="publication-links">
+            <a href="https://doi.org/10.1109/ICASSP39728.2021.9413383" target="_blank" rel="noopener noreferrer" aria-label="DOI: 10.1109/ICASSP39728.2021.9413383">DOI</a>
+            <a href="https://hal.archives-ouvertes.fr/hal-03227078/document" target="_blank" rel="noopener noreferrer">Article</a>
+            <button class="bibtex-btn" onclick="downloadBibtex('ICASSP2021')" aria-label="Download BibTeX">BibTeX</button>
+          </div>
+        </div>
+      </article>
+      
+      <article class="publication">
+        <div class="publication-meta">
+          <span class="publication-year">2021</span>
+        </div>
+        <div class="publication-content">
+          <h3>Globally optimizing owing to tensor decomposition.</h3>
+          <p class="publication-authors">A. Marmin, M. Castella, J.-C. Pesquet</p>
+          <p class="publication-journal">European Signal Processing Conference (EUSIPCO), pp. 990-994, January 2021</p>
+          <div class="publication-links">
+            <a href="https://doi.org/10.23919/Eusipco47968.2020.9287511" target="_blank" rel="noopener noreferrer" aria-label="DOI: 10.23919/Eusipco47968.2020.9287511">DOI</a>
+            <a href="https://hal.archives-ouvertes.fr/hal-03040027/document" target="_blank" rel="noopener noreferrer">Article</a>
+            <button class="bibtex-btn" onclick="downloadBibtex('EUSIPCO2021')" aria-label="Download BibTeX">BibTeX</button>
+          </div>
+          </div>
+      </article>
+
+      <article class="publication">
+        <div class="publication-meta">
+          <span class="publication-year">2020</span>
+        </div>
+        <div class="publication-content">
+          <h3>Robust reconstruction with nonconvex subset constraints: a polynomial optimization approach.</h3>
+          <p class="publication-authors">A. Marmin, M. Castella, J.-C. Pesquet</p>
+          <p class="publication-journal">IEEE International Workshop on Machine Learning for Signal Processing, September 2020</p>
+          <div class="publication-links">
+            <a href="https://doi.org/10.1109/mlsp49062.2020.9231524" target="_blank" rel="noopener noreferrer" aria-label="DOI: 10.1109/mlsp49062.2020.9231524">DOI</a>
+            <a href="https://hal.archives-ouvertes.fr/hal-02977062/document" target="_blank" rel="noopener noreferrer">Article</a>
+            <button class="bibtex-btn" onclick="downloadBibtex('MLSP2020')" aria-label="Download BibTeX">BibTeX</button>
+          </div>
+        </div>
+      </article>
+      
+      <article class="publication">
+        <div class="publication-meta">
+          <span class="publication-year">2020</span>
+        </div>
+        <div class="publication-content">
+          <h3>A moment-based approach for guaranteed tensor decomposition.</h3>
+          <p class="publication-authors">A. Marmin, M. Castella, J.-C. Pesquet</p>
+          <p class="publication-journal">International Conference on Acoustics, Speech, and Signal Processing (ICASSP), pp. 3927-3931, May 2020</p>
+          <div class="publication-links">
+            <a href="https://doi.org/10.1109/ICASSP40776.2020.9054186" target="_blank" rel="noopener noreferrer" aria-label="DOI: 10.1109/ICASSP40776.2020.9054186">DOI</a>
+            <a href="https://hal.archives-ouvertes.fr/hal-02654329/document" target="_blank" rel="noopener noreferrer">Article</a>
+            <button class="bibtex-btn" onclick="downloadBibtex('ICASSP2020')" aria-label="Download BibTeX">BibTeX</button>
+          </div>
+        </div>
+      </article>
+      
+      <article class="publication">
+        <div class="publication-meta">
+          <span class="publication-year">2019</span>
+        </div>
+        <div class="publication-content">
+          <h3>Detecting the rank of a symmetric tensor.</h3>
+          <p class="publication-authors">A. Marmin, M. Castella, J.-C. Pesquet</p>
+          <p class="publication-journal">European Signal Processing Conference (EUSIPCO), pp. 1-5, September 2019</p>
+          <div class="publication-links">
+            <a href="https://doi.org/10.23919/EUSIPCO.2019.8902781" target="_blank" rel="noopener noreferrer" aria-label="DOI: 10.23919/EUSIPCO.2019.8902781">DOI</a>
+            <a href="https://hal.archives-ouvertes.fr/hal-02284991/document" target="_blank" rel="noopener noreferrer">Article</a>
+            <button class="bibtex-btn" onclick="downloadBibtex('EUSIPCO2019')" aria-label="Download BibTeX">BibTeX</button>
+          </div>
+        </div>
+        </article>
+      
+      <article class="publication">
+        <div class="publication-meta">
+          <span class="publication-year">2019</span>
+        </div>
+        <div class="publication-content">
+          <h3>Sparse signal reconstruction with a sign oracle.</h3>
+          <p class="publication-authors">A. Marmin, M. Castella, J.-C. Pesquet</p>
+          <p class="publication-journal">Signal Processing with Adaptive Sparse Structured Representations (SPARS) workshop, July 2019</p>
+          <div class="publication-links">
+            <a href="https://hal.archives-ouvertes.fr/hal-02196881/document" target="_blank" rel="noopener noreferrer">Article</a>
+            <button class="bibtex-btn" onclick="downloadBibtex('SPARS2019')" aria-label="Download BibTeX">BibTeX</button>
+          </div>
+        </div>
+      </article>
+      
+      <article class="publication">
+        <div class="publication-meta">
+          <span class="publication-year">2019</span>
+        </div>
+        <div class="publication-content">
+          <h3>How to globally solve non-convex optimization problems involving an approximate ℓ<sub>0</sub> penalization.</h3>
+          <p class="publication-authors">A. Marmin, M. Castella, J.-C. Pesquet</p>
+          <p class="publication-journal">International Conference on Acoustics, Speech, and Signal Processing (ICASSP), pp. 5601-5605, May 2019</p>
+          <div class="publication-links">
+            <a href="https://doi.org/10.1109/ICASSP.2019.8683692" target="_blank" rel="noopener noreferrer" aria-label="DOI: 10.1109/ICASSP.2019.8683692">DOI</a>
+            <a href="https://hal.archives-ouvertes.fr/hal-02196878/document" target="_blank" rel="noopener noreferrer">Article</a>
+            <button class="bibtex-btn" onclick="downloadBibtex('ICASSP2019')" aria-label="Download BibTeX">BibTeX</button>
+          </div>
+        </div>
+      </article>
+      
+      <article class="publication">
+        <div class="publication-meta">
+          <span class="publication-year">2018</span>
+        </div>
+        <div class="publication-content">
+          <h3>Signal reconstruction from sub-sampled and nonlinearly distorted observations.</h3>
+          <p class="publication-authors">A. Marmin, M. Castella, J.-C. Pesquet, L. Duval</p>
+          <p class="publication-journal">European Signal Processing Conference (EUSIPCO), pp. 1970-1974, September 2018</p>
+          <div class="publication-links">
+            <a href="https://doi.org/10.23919/EUSIPCO.2018.8553174" target="_blank" rel="noopener noreferrer" aria-label="DOI: 10.23919/EUSIPCO.2018.8553174">DOI</a>
+            <a href="https://hal.archives-ouvertes.fr/hal-01957568/document" target="_blank" rel="noopener noreferrer">Article</a>
+            <button class="bibtex-btn" onclick="downloadBibtex('EUSIPCO2018')" aria-label="Download BibTeX">BibTeX</button>
+          </div>
+        </div>
+      </article>
+      
+      <article class="publication">
+        <div class="publication-meta">
+          <span class="publication-year">2016</span>
+        </div>
+        <div class="publication-content">
+          <h3>Architecture Agnostic Energy Model for GPU-based Design.</h3>
+          <p class="publication-authors">A. Marmin, C.H. Lai, T. Haruyuki, H.L. Huang, J.M. Lu</p>
+          <p class="publication-journal">International Symposium on VLSI Design, Automation and Test (VLSI-DAT), Hsinchu, Taiwan, April 2016</p>
+          <div class="publication-links">
+            <a href="https://doi.org/10.1109/VLSI-DAT.2016.7482557" target="_blank" rel="noopener noreferrer" aria-label="DOI: 10.1109/VLSI-DAT.2016.7482557">DOI</a>
+            <button class="bibtex-btn" onclick="downloadBibtex('VLSIDAT2016')" aria-label="Download BibTeX">BibTeX</button>
+          </div>
+        </div>
+      </article>
+    </section>
+    
+    <!-- Thèse de doctorat -->
+    <section class="publications-section">
+      <h2 class="publi-type" data-i18n="publications.thesis">Thèse de doctorat</h2>
+      
+      <article class="publication">
+        <div class="publication-meta">
+          <span class="publication-year">2020</span>
+        </div>
+        <div class="publication-content">
+          <h3>Rational models optimized exactly for solving signal processing problems</h3>
+          <p class="publication-authors">Arthur Marmin</p>
+          <p class="publication-journal">Signal and Image processing. Université Paris-Saclay, 2020. English. ⟨NNT : 2020UPASG017⟩</p>
+          <div class="publication-links">
+            <a href="https://tel.archives-ouvertes.fr/tel-03099312/document" target="_blank" rel="noopener noreferrer">Manuscript</a>
+            <button class="bibtex-btn" onclick="downloadBibtex('PhDThesis2020')" aria-label="Download BibTeX">BibTeX</button>
+          </div>
+        </div>
+      </article>
+    </section>
+    
+    </main>
+  
+  <!-- Footer optionnel -->
+  <footer>
+    <p data-fr="© 2026 Arthur Marmin" data-en="© 2026 Arthur Marmin">
+      © 2026 Arthur Marmin
+    </p>
+  </footer>
+</body>
+</html>

@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal Webpage - Arthur Marmin">
+  <meta name="description" content="Contact - Arthur Marmin">
   <meta name="author" content="Arthur Marmin">
 
-  <title>Arthur Marmin</title>
+  <title>Contact - Arthur Marmin</title>
 
   <link rel="stylesheet" href="css/style.css">
   <script src="js/language.js"></script>
 </head>
+
 
 <body>
   <!-- Barre de langue en haut -->
@@ -45,7 +46,7 @@
     </div>
   </header>
 
-  <!-- Navigation cohérente -->
+   <!-- Navigation cohérente -->
   <nav>
     <ul>
       <li><a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a></li>
@@ -55,32 +56,39 @@
     </ul>
   </nav>
 
+
   <main>
-
     <div class="container">
-
       <div class="card">
+        
+        <h1 data-fr="Contact" data-en="Contact">Contact</h1>
+        
+        <div class="contact-grid">
+          <div class="contact-item">
+            <div class="contact-label">
+              <span data-fr="Email" data-en="Email">Email</span>
+            </div>
+            <div class="contact-value">
+              <a class="contact-link" href="mailto:arthur.marmin@univ-amu.fr">
+                arthur.marmin@univ-amu.fr
+              </a>
+            </div>
+          </div>
 
-        <h1
-          data-fr="Présentation"
-          data-en="Biography">
-          Présentation
-        </h1>
-
-        <p
-          data-fr="Je suis enseignant-chercheur à Aix-Marseille Université et membre de l'Institut de Mathématiques de Marseille dans l'équipe Signal et Image.
-                   Mes recherches se concentrent sur l'optimisation et ses applications en traitement du signal et en apprentissage automatique.</br>
-                   
-                   Je suis également le responsable de première année du Master <i>Mathématiques appliquées, statistique</i>, parcours <i>Data Science</i> d'Aix-Marseille Université."
-          data-en="I am a faculty member at Aix-Marseille University and a member of the Institut de Mathématiques de Marseille in the Signal and Image team.
-                   My main research interest revolves around mathematical optimization and its application to signal processing and machine learning.</br>
-                   
-                   I am also in charge for the first year of the master program <i>Mathématiques appliquées, statistique</i>, parcours <i>Data Science</i> at Aix-Marseille Université.">
-          Je suis enseignant-chercheur à Aix-Marseille Université et membre de l'Institut de Mathématiques de Marseille dans l'équipe Signal et Image.
-          Mes recherches se concentrent sur l'optimisation et ses applications en traitement du signal et en apprentissage automatique.</br>
-          
-          Je suis également le responsable de première année du Master <i>Mathématiques appliquées, statistique</i>, parcours <i>Data Science</i> d'Aix-Marseille Université.
-        </p>
+          <div class="contact-item">
+            <div class="contact-label">
+              <span data-fr="Adresse" data-en="Address">Adresse</span>
+            </div>
+            <div class="contact-value contact-address">
+              Bureau 8-1/O-06 (Bâtiment 8 - 1er étage - aile ouest)<br>
+              Aix-Marseille Université<br>
+              Campus Marseille Centre, Bâtiment Sciences Naturelles<br>
+              3 Place Victor Hugo,<br>
+              13003 MARSEILLE - France
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div>
   </main>
@@ -91,6 +99,5 @@
       © 2026 Arthur Marmin
     </p>
   </footer>
-
 </body>
 </html>
